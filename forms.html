@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 
 <head>
     <meta charset="UTF-8">
@@ -8,47 +8,90 @@
     <title>Forms</title>
 </head>
 
-<body>
+<body></body>
+<!-- post ve get metoduyla bilgiler alını bir yerlere taşınır. 
+post medotu ile bilgilerin gizliliği sağlanır -->
 
-    <form action="result.html" method="post">
+<!-- <form action="mailto:ertan" method="post"> -->
 
-        <div>
-            <label for="fname">First Name</label>
-            <input type="text" id="fName" name="name">
+    <form action="result.html" method="get">
+
+    <div>
+        <label for="fname">First Name</label>
+        <br>
+        <input type="text" id="fName" name="name">
+        <br>
+
+    </div>
+
+    <div>
+        <br>
+        <label for="lname">Last Name</label>
+        <br>
+        <input type="text" id="lNmae" name="lname">
+        <br>
+    </div>
+    <div>
+        <br>
+        <label for="email">E-mail</label>
+        <br>
+        <input type="email" id="email" name="email" placeholder="email">
+    </div>
+
+       <!-- <div> 
+        <br>
+        <label for="password">Password</label>
+        <br>
+        <input type="password" id="password" name="password">
+    </div>-->
 
 
+    <div>
+
+        <p>Language</p>
+        <input type="radio" name="lang" value="en" id="en" />
+        <label for="en">English</label>
+        <input type="radio" name="lang" value="deu" id="deu" />
+        <label for="deu">Deutsch</label>
+
+
+    </div>
+<hr>
+<br>
+<div>
+<label for="country">Chouse a country</label>
+<select name="country" id="country">
+<option value="">Ulke seciniz</option>
+<option value="Turkey">Turkey</option>
+<option value="Germany">Germany</option>
+<option value="France">France</option>
+<option value="Italy">Italy</option>
+<option value="Spain">Spain</option>
+
+</select>
+
+</div>
+
+
+<hr>
+<br>
+        <input type="submit" name="" value="Submit" placeholder="Buraya mesajınızı yazınız">
+
+<br>
+    
+
+
+<div>
+    <label for="msg" id="msg"></label>
+    <textarea name="mesaj" id="" cols="30" rows="10" ></textarea>
+    
+    
+    
+    
+    
+    
         </div>
-
-        <div>
-
-            <label for="lname">Last Name</label>
-            <input type="text" id="lNmae" name="lname">
-
-        </div>
-        <div>
-
-            <label for="email">E-mail</label>
-            <input type="email" id="email" name="email" placeholder="email">
-        </div>
-        <div>
-
-            <label for="password">Password</label>
-            <input type="password" id="password" name="password"  >
-        </div>
-
-
-        <div>
-
-            <p>Language</p>
-            <input type="radio" name="Lang" value="en"/>English
-            <input type="radio" name="Lang" value="deu"/>Deuche
-
-
-        </div>
-            
-
-
-        <input type="submit" name=""  value="Submit">
+    
 
 
 
@@ -56,13 +99,7 @@
 
 
 
-
-
-
-
-
-
-    </form>
+</form>
 
 
 
