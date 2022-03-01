@@ -71,19 +71,28 @@ post medotu ile bilgilerin gizliliği sağlanır -->
 </select>
 
 </div>
-
-
 <hr>
-<br>
-        <input type="submit" name="" value="Submit" placeholder="Buraya mesajınızı yazınız">
-
-<br>
-    
-
 
 <div>
-    <label for="msg" id="msg"></label>
-    <textarea name="mesaj" id="" cols="30" rows="10" ></textarea>
+    <label for="prgLangs-choice">Chose a programme Languages</label>
+    <input  list="prgLangs" name="prgLangs-choice" id="prgLangs-choice">
+<datalist id="prgLangs">
+<option value="Java">Java
+<option value="JavaScript">JavaScript
+<option value="pyton">pyton
+<option value="C++">C++
+<option value="C0">C0
+
+</datalist>
+
+</div>
+
+<hr>
+
+<div>
+    <label for="msg">Mesajınızı yazınız</label>
+    <br>
+    <textarea name="message" id="msg" cols="30" rows="10" placeholder="Mesajınızı giriniz" ></textarea>
     
     
     
@@ -91,7 +100,10 @@ post medotu ile bilgilerin gizliliği sağlanır -->
     
     
         </div>
-    
+        <br>
+        <input type="submit" name="" value="Submit" >
+
+<br>
 
 
 
