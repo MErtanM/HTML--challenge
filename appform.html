@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Page</title>
+</head>
+
+<body>
+    <h1>Application Form</h1>
+
+    <p>
+        <strong>Note:</strong>Form is to be completed before 21 days
+
+    </p>
+
+    <form action="mailto:ertan" method="post">
+
+        <fieldset>
+            <legend><i><b>Personal Details</b></i></legend>
+            <div>
+                <label for="name">Name:</label>
+                <input name="name" type="text" id="name" required>
+
+            </div>
+            <br>
+            <div>
+
+                <label for="lname">Last Name:</label>
+                <input type="text" name="lname" id="lname" required>
+
+            </div>
+            <br>
+            <div>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="Write here your e-mail" required>
+            </div>
+            <br>
+
+            <div>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" name="phone" id="phone" required>
+            </div>
+
+            <div>
+                <p>Gender:</p>
+
+                <div>
+
+                    <input type="radio" name="gender" id="female" value="Female">
+                    <label for="Female">Female</label>
+                </div>
+
+                <div>
+                    <input type="radio" name="gender" id="male" value="male">
+                    <label for="male">Male</label>
+
+                </div>
+
+                <div>
+                    <label for="date">Date</label>
+                    <input type="date" name="date" id="date">
+                </div>
+            </div>
+
+        </fieldset>
+
+        <br>
+
+        <fieldset>
+            <label for="degree">Education Level Completed :</label>
+            <select name="degre" id="degree">
+                <option value="University">University</option>
+                <option value="Collage">Collage</option>
+                <option value="High School">High School</option>
+                <option value="None" selected>None</option>
+
+            </select>
+
+        </fieldset>
+        <br>
+        <fieldset>
+            <p>Please check if you know any of below :</p>
+            <input type="checkbox" name="html" value="html" checked>HTML
+            <br>
+            <input type="checkbox" name="css" value="css" checked>CSS
+            <br>
+            <input type="checkbox" name="js" value="js">JS
+            <br>
+            <input type="checkbox" name="react" value="react" checked>React
+            <br>
+            <input type="checkbox" name="nodejs" value="nodejs">NodeJS
+            <br>
+
+        </fieldset>
+
+
+        <fieldset>
+            <legend> <i><b>Additional Information</b></i> </legend>
+            <label>Please add any information :</label>
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Enter your text here"></textarea>
+
+            <p>Please add any file as .pdf format :</p>
+            <input type="file" name="file" accept=".pdf">
+
+        </fieldset>
+        <br>
+
+        <input type="submit" name="submit" value="Submit">
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
